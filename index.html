@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Public/IMG/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Dine Website Challenge</title>
+
+    <link rel="stylesheet" href="./Public/CSS/style.css" />
+    <script defer src="./Public/JS/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav"><img src="./Public/IMG/logo.svg" alt="" /></div>
+
+      <div class="header-body">
+        <div class="header-copy">
+          <h1 class="heading-xl">Exquisite dining since 1989</h1>
+          <p class="body-1">
+            Experience our seasonal menu in beautiful country surroundings. Eat
+            the freshest produce from the comfort of our farmhouse.
+          </p>
+        </div>
+
+        <button class="btn btn-outline">Book a table</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-1">
+        <div class="section-left">
+          <img class="section-img" src="" alt="" />
+        </div>
+        <div class="section-right">
+          <h2>Enjoyable place for all the family</h2>
+          <p>
+            Our relaxed surroundings make dining with us a great experience for
+            everyone. We can even arrange a tour of the farm before your meal.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="section-left">
+          <h2>The most locally sourced food</h2>
+          <p>
+            All our ingredients come directly from our farm or local fishery. So
+            you can be sure that you’re eating the freshest, most sustainable
+            food.
+          </p>
+        </div>
+        <div class="section-right">
+          <img class="section-img" src="" alt="" />
+        </div>
+      </section>
+
+      <section class="section-3">
+        <div class="section-left">
+          <h3 class="heading-l">A few highlights from our menu</h3>
+          <p>
+            We cater for all dietary requirements, but here’s a glimpse at some
+            of our diner’s favourites. Our menu is revamped every season.
+          </p>
+        </div>
+        <div class="section-right">
+          <div class="menu-1">
+            <div class="menu-img">
+              <img src="" alt="" />
+            </div>
+            <div class="menu-copy">
+              <h4>Seared Salmon Fillet</h4>
+              <p>
+                Our locally sourced salmon served with a refreshing buckwheat
+                summer salad.
+              </p>
+            </div>
+          </div>
+          <div class="menu-2">
+            <div class="menu-img">
+              <img src="" alt="" />
+            </div>
+            <div class="menu-copy">
+              <h4>Rosemary Filet Mignon</h4>
+              <p>
+                Our prime beef served to your taste with a delicious choice of
+                seasonal sides.
+              </p>
+            </div>
+          </div>
+          <div class="menu-3">
+            <div class="menu-img">
+              <img src="" alt="" />
+            </div>
+            <div class="menu-copy">
+              <h4>Summer Fruit Chocolate Mousse</h4>
+              <p>
+                Creamy mousse combined with summer fruits and dark chocolate
+                shavings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-4">
+        <div class="section-4_container">
+          <div class="section-right">
+            <div id="Family" class="tab-content">
+              <img
+                src="./Public/IMG/homepage/family-gathering-desktop@2x.jpg"
+                alt=""
+              />
+              <div class="tab-copy">
+                <div class="tab-body">
+                  <h2 class="heading-l">Family Gathering</h2>
+                  <p class="body-1">
+                    We love catering for entire families. So please bring
+                    everyone along for a special meal with your loved ones.
+                    We’ll provide a memorable experience for all.
+                  </p>
+                </div>
+
+                <button class="btn btn-primary">Book A Table</button>
+              </div>
+            </div>
+
+            <div id="Special" class="tab-content">
+              <img
+                src="./Public/IMG/homepage/special-events-desktop@2x.jpg"
+                alt=""
+              />
+              <div class="tab-copy">
+                <div class="tab-body">
+                  <h2 class="heading-l">Special Events</h2>
+                  <p class="body-1">
+                    Whether it’s a romantic dinner or special date you’re
+                    celebrating with others we’ll look after you. We’ll be sure
+                    to mark your special date with an unforgettable meal.
+                  </p>
+                </div>
+
+                <button class="btn btn-primary">Book A Table</button>
+              </div>
+            </div>
+
+            <div id="Social" class="tab-content">
+              <img
+                src="./Public/IMG/homepage/social-events-desktop@2x.jpg"
+                alt=""
+              />
+              <div class="tab-copy">
+                <div class="tab-body">
+                  <h2 class="heading-l">Social Events</h2>
+                  <p class="body-1">
+                    Are you looking to have a larger social event? No problem!
+                    We’re more than happy to cater for big parties. We’ll work
+                    with you to make your event a hit with everyone.
+                  </p>
+                </div>
+
+                <button class="btn btn-primary">Book A Table</button>
+              </div>
+            </div>
+
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openEvent(event, 'Family')"
+                id="defaultOpen"
+              >
+                Family Gathering
+              </button>
+              <button class="tablinks" onclick="openEvent(event, 'Special')">
+                Special Events
+              </button>
+              <button class="tablinks" onclick="openEvent(event, 'Social')">
+                Social Events
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-ready">
+        <h1>Ready to make a reservation?</h1>
+
+        <button class="btn btn-outline">Book a table</button>
+      </div>
+      <div class="footer-nav">
+        <img src="" alt="" />
+        <div class="footer-address">
+          Marthwaite, Sedbergh<br />
+          Cumbria<br />
+          +00 44 123 4567
+        </div>
+        <div class="footer-opening">
+          Open Times<br />
+          Mon - Fri: 09:00 AM - 10:00 PM<br />
+          Sat - Sun: 09:00 AM - 11:30 PM
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
