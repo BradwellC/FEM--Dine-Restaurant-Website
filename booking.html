@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Public/IMG/favicon-32x32.png"
+    />
 
-  Reservations
+    <title>Frontend Mentor | Dine Website Challenge</title>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+    <link rel="stylesheet" href="./Public/CSS/booking.css" />
+    <script defer src="./Public/JS/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav"><img src="./Public/IMG/logo.svg" alt="" /></div>
 
+      <div class="header-body">
+        <div class="header-copy">
+          <h1 class="heading-xl">Reservations</h1>
+          <p class="body-1">
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+        </div>
 
+        <form class="header-form">
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <label class="body-1" for="date">Pack a date</label>
+            <div class="form-date">
+              <input type="text" name="month" id="month" placeholder="MM" />
+              <input type="text" name="day" id="day" placeholder="DD" />
+              <input type="text" name="year" id="year" placeholder="YYYY" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="body-1" for="time">Pick a time</label>
+            <div class="form-time">
+              <input type="text" name="hour" id="hour" placeholder="09" />
+              <input type="text" name="minute" id="minute" placeholder="00" />
+              <select class="form-select" name="" id="">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-counter">
+            <button id="btn-minus">-</button>
+            <div id="counter-value">4 people</div>
+            <button id="btn-plus">+</button>
+          </div>
+          <button class="btn btn-form" type="submit">Make Reservation</button>
+        </form>
+      </div>
+    </header>
 
-  Name
-  Email
-  Pick a date
-  Pick a time
+    <main>
+      <section class="empty-section"></section>
+    </main>
 
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
-</body>
+    <footer class="footer-nav">
+      <div class="footer-container">
+        <img class="footer-img" src="./Public/IMG/logo.svg" alt="" />
+        <div class="footer-address">
+          Marthwaite, Sedbergh<br />
+          Cumbria<br />
+          +00 44 123 4567
+        </div>
+        <div class="footer-opening">
+          Open Times<br />
+          Mon - Fri: 09:00 AM - 10:00 PM<br />
+          Sat - Sun: 09:00 AM - 11:30 PM
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
